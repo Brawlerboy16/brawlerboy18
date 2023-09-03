@@ -5,53 +5,30 @@
     <title>animation</title>
     <style>
         @keyframes david {
-
-            0% {
+            from {
+                padding: 20px;
                 background: white;
-                padding: 34px;
-                margin: 0px;
+                transform: scale(1);
+
+
             }
 
-            25% {
+            to {
+                padding: 23px;
                 background: black;
-                padding: 34px;
-                margin-top: 0px;
-                margin-left: 300px;
-                border-bottom-left-radius: 30px;
-            }
-
-            50% {
-                margin-top: 300px;
-                margin-left: 300px;
-                padding: 34px;
-                background: white;
-            }
-
-            75% {
-                margin-top: 300px;
-                margin-left: 0px;
-                padding: 34px;
-                background: black;
-                border-top-right-radius: 30px;
-                border-top-left -radius: 30px;
-            }
-
-            100% {
-                margin: 0px;
-                padding: 34px;
-                background: white;
-                border-radius: 45px;
+                transform: scale(3);
             }
         }
 
-        k button {
-            background: black;
+        button {
+            background: white;
+            animation-duration: 2s;
             animation-name: david;
-            animation-duration: 10s;
             animation-timing-function: ease-in-out;
             animation-delay: 0s;
             animation-iteration-count: infinite;
-            animation-direction: forwards;
+            animation-direction: alternate;
+            transform: translate(300px 200px);
 
 
 
@@ -61,6 +38,9 @@
 
 <body>
     <button>TETRIS</button>
+
+
+
 
 </body>
 
