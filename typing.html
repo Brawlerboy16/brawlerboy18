@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+
+
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        body {
+
+            background: black;
+            color: yellowgreen;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .loader {
+            position: relative;
+        }
+
+        .loader::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 2px;
+            height: 40%;
+            margin-top: 45px;
+            background: yellowgreen;
+            animation: blink 0.8s steps(3) infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            75% {
+                opacity: 1;
+            }
+
+            76%,
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .loader h2 {
+            position: relative;
+            color: yellowgreen;
+            letter-spacing: 5px;
+            font-size: 4rem;
+            text-transform: uppercase;
+            animation: cursor 8s steps(10) infinite;
+            overflow: hidden;
+
+        }
+
+        @keyframes cursor {
+
+            0%,
+            90%,
+            100% {
+                width: 0;
+            }
+
+            30%,
+            60% {
+                width: 434.06px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading container-fluid">
+        <div class="loader">
+            <h2>javascript</h2>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <h2>HISTORY OF JAVASCRIPT</h2>
+        <p>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+
+            ECMAScript is the official name of the language.
+
+            ECMAScript versions have been abbreviated to ES1, ES2, ES3, ES5, and ES6.
+
+            Since 2016, versions are named by year (ECMAScript 2016, 2017, 2018, 2019, 2020).</p>
+    </div>
+</body>
+
+</html>
